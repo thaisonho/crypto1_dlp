@@ -146,7 +146,7 @@ E4      (h = 0x4E = 78)
 - y^r × r^h = 66 × 49 = 80 (mod 83)
 - Since 78 ≠ 80, signature is invalid
 
-## Quick Start
+## Using the generator and auto compare result
 
 ```bash
 cd project_02_04
@@ -158,7 +158,3 @@ g++ -std=c++17 -O3 -o test_generator test_generator.cpp
 # 2. Generate and verify custom tests
 ./test_generator --num 100
 ```
-
-## Author
-
-Implementation for Cryptography Course - Exercise 4: ElGamal Digital Signature System
