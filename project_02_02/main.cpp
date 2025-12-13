@@ -543,13 +543,10 @@ int main(int argc, char* argv[]) {
     
     inFile.close();
 
-    // Calculate A = g^a mod p (Alice's public value)
     BigInt A = BigInt::powerMod(g, a, p);
     
-    // Calculate B = g^b mod p (Bob's public value)
     BigInt B = BigInt::powerMod(g, b, p);
     
-    // Calculate K = A^b mod p = B^a mod p = g^(ab) mod p (shared secret)
     BigInt K = BigInt::powerMod(A, b, p);
 
     ofstream outFile(argv[2]);
